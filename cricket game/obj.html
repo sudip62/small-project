@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    obj
+</body>
+<script>
+   
+   
+
+    function compair(obj1, obj2){
+
+        if(typeof obj1 !== 'object' || typeof obj2 !== 'object'){
+            console.warn('value duti object noy');
+            
+            return false;
+        }
+
+    if(obj1===obj2){
+        console.log('duti aktai product')
+        return true;
+      }else{
+        console.log('gar marao')
+      }
+
+
+     if (obj1.tshart=== obj2.tshart && obj1.size== obj2.size && obj1.colour=== obj2.colour){
+        
+        console.warn('dutio sem product bujla')
+        return true
+     }else{
+        console.error('product sem noy ra vi')
+     }
+
+    };
+
+
+ let obj = {
+        tshart: 'suti',
+        size: 'm',
+        colour: 'blue'
+    }
+
+    let obj2 = {
+        tshart: 'suti',
+        size: 'm',
+        colour: 'blue'
+    }
+
+     let obj3 = {
+        tshart: 'suti',
+        size: 'm',
+        colour: 'blue'
+    }
+
+let oo = '1254'
+
+    console.log(compair(obj, obj2));
+    console.log(compair(obj, oo));
+    console.log(compair(obj2,obj3 ))
+
+
+</script>
+</html>
